@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://wynlwg5i1bpy"]
+
+[ext_resource type="Texture2D" uid="uid://dxvalxekbsvm" path="res://senseirunstartmwenu.png" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://fericbl3jxgk" path="res://menu.gd" id="1_ouk20"]
+
+[node name="Node2D" type="Node2D" unique_id=2053624501]
+script = ExtResource("1_ouk20")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1697005095]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1643408172]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lti8b")
+
+[node name="Button" type="Button" parent="." unique_id=1044814980]
+offset_left = 699.0
+offset_top = 327.0
+offset_right = 1027.0
+offset_bottom = 424.0
+theme_override_font_sizes/font_size = 54
+text = "Start"
+
+[node name="Button2" type="Button" parent="." unique_id=338742378]
+offset_left = 703.0
+offset_top = 455.0
+offset_right = 1031.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 54
+text = "Quit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

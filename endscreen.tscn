@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dvjgnrhh1nf3"]
+
+[ext_resource type="Script" uid="uid://q5r0o6wwd64j" path="res://endscreen.gd" id="1_gcvua"]
+[ext_resource type="Texture2D" uid="uid://oa8idy2eqhuj" path="res://endignscreenm.png" id="2_dlbub"]
+
+[sub_resource type="Theme" id="Theme_pivne"]
+
+[node name="Node2D" type="Node2D" unique_id=1074111817]
+script = ExtResource("1_gcvua")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1852350791]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1049608229]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_dlbub")
+
+[node name="Button" type="Button" parent="." unique_id=467531849]
+offset_left = 189.0
+offset_top = 521.0
+offset_right = 453.0
+offset_bottom = 615.0
+theme = SubResource("Theme_pivne")
+theme_override_font_sizes/font_size = 33
+text = "Home screen"
+
+[node name="Button2" type="Button" parent="." unique_id=1957438131]
+offset_left = 681.0
+offset_top = 520.0
+offset_right = 945.0
+offset_bottom = 614.0
+theme = SubResource("Theme_pivne")
+theme_override_font_sizes/font_size = 33
+text = "Quit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

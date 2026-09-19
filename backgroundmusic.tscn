@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bmjx0nh2p0hvy"]
+
+[ext_resource type="AudioStream" uid="uid://chku311ltp31w" path="res://bounce-bay-records-traditional-japanese-3-437933.mp3" id="1_2bmh7"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=1447467918]
+stream = ExtResource("1_2bmh7")
+autoplay = true

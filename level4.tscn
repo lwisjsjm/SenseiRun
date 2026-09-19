@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://wm5aqfwxe6mv"]
+
+[ext_resource type="Texture2D" uid="uid://cuy4iprpjywme" path="res://preview.png" id="1_bp1i4"]
+[ext_resource type="Texture2D" uid="uid://d34op504qb6wu" path="res://Mine_Tileset_1B_16.png" id="2_bvvno"]
+[ext_resource type="PackedScene" uid="uid://2xgnyhn6apdq" path="res://sensei-chan.tscn" id="3_b4lsh"]
+[ext_resource type="Script" uid="uid://cfxgjfm073wgs" path="res://borders2.gd" id="4_yxclo"]
+[ext_resource type="PackedScene" uid="uid://bum666b121r0o" path="res://bedfinal.tscn" id="5_pklw6"]
+[ext_resource type="Script" uid="uid://b2j2loc26bv24" path="res://bedfinal.gd" id="6_bp1i4"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ahf7r"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ootpb"]
+texture = ExtResource("2_bvvno")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_pivne"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_ahf7r")
+sources/0 = SubResource("TileSetAtlasSource_ootpb")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pivne"]
+
+[node name="Node2D" type="Node2D" unique_id=909591211]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1787612917]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1971475008]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bp1i4")
+
+[node name="TileMap" type="TileMap" parent="." unique_id=513958610]
+tile_set = SubResource("TileSet_pivne")
+format = 2
+layer_0/tile_data = PackedInt32Array(2359299, 0, 1, 2424835, 0, 3, 2359300, 65536, 1, 2359301, 65536, 1, 2359302, 65536, 1, 2359303, 65536, 1, 2359304, 65536, 1, 2359305, 65536, 1, 2359306, 65536, 1, 2359307, 65536, 1, 2359308, 65536, 1, 2359309, 65536, 1, 2359310, 65536, 1, 2359311, 65536, 1, 2359312, 65536, 1, 2359313, 65536, 1, 2359314, 65536, 1, 2424850, 131072, 3, 2424849, 65536, 3, 2424848, 65536, 3, 2424847, 65536, 3, 2424846, 65536, 3, 2424845, 65536, 3, 2424844, 65536, 3, 2424843, 65536, 3, 2424842, 65536, 3, 2424841, 65536, 3, 2424840, 65536, 3, 2424839, 65536, 3, 2424838, 65536, 3, 2424837, 65536, 3, 2424836, 65536, 3, 2359364, 65536, 1, 2359366, 65536, 1, 2359367, 131072, 1, 2359365, 65536, 1, 2424900, 65536, 3, 2424901, 65536, 3, 2424902, 65536, 3, 2424903, 131072, 3, 2359315, 131072, 1, 2359316, 65536, 1, 2359317, 131072, 1, 2359318, 65536, 1, 2359319, 131072, 1, 2359320, 65536, 1, 2359321, 131072, 1, 2359322, 65536, 1, 2359323, 131072, 1, 2359324, 65536, 1, 2359325, 131072, 1, 2359326, 65536, 1, 2359327, 131072, 1, 2359328, 65536, 1, 2359329, 131072, 1, 2359330, 65536, 1, 2359331, 131072, 1, 2359332, 65536, 1, 2359333, 131072, 1, 2359334, 65536, 1, 2359335, 131072, 1, 2359336, 65536, 1, 2359337, 131072, 1, 2359338, 65536, 1, 2359339, 131072, 1, 2359340, 65536, 1, 2359341, 131072, 1, 2359342, 65536, 1, 2359343, 131072, 1, 2359344, 65536, 1, 2359345, 131072, 1, 2359346, 65536, 1, 2359347, 131072, 1, 2359348, 65536, 1, 2359349, 131072, 1, 2359350, 65536, 1, 2359351, 131072, 1, 2359352, 65536, 1, 2359353, 131072, 1, 2359354, 65536, 1, 2359355, 131072, 1, 2359356, 65536, 1, 2359357, 131072, 1, 2359358, 65536, 1, 2359359, 131072, 1, 2359360, 65536, 1, 2359361, 131072, 1, 2359362, 65536, 1, 2359363, 131072, 1, 2424851, 65536, 3, 2424852, 65536, 3, 2424853, 65536, 3, 2424854, 65536, 3, 2424855, 65536, 3, 2424856, 65536, 3, 2424857, 65536, 3, 2424858, 65536, 3, 2424859, 65536, 3, 2424860, 65536, 3, 2424861, 65536, 3, 2424862, 65536, 3, 2424863, 65536, 3, 2424864, 65536, 3, 2424865, 65536, 3, 2424866, 65536, 3, 2424867, 65536, 3, 2424868, 65536, 3, 2424869, 65536, 3, 2424870, 65536, 3, 2424871, 65536, 3, 2424872, 65536, 3, 2424873, 65536, 3, 2424874, 65536, 3, 2424875, 65536, 3, 2424876, 65536, 3, 2424877, 65536, 3, 2424878, 65536, 3, 2424879, 65536, 3, 2424880, 65536, 3, 2424881, 65536, 3, 2424882, 65536, 3, 2424883, 65536, 3, 2424884, 65536, 3, 2424885, 65536, 3, 2424886, 65536, 3, 2424887, 65536, 3, 2424888, 65536, 3, 2424889, 65536, 3, 2424890, 65536, 3, 2424891, 65536, 3, 2424892, 65536, 3, 2424893, 65536, 3, 2424894, 65536, 3, 2424895, 65536, 3, 2424896, 65536, 3, 2424897, 65536, 3, 2424898, 65536, 3, 2424899, 65536, 3)
+
+[node name="CharacterBody2D" parent="." unique_id=948764157 instance=ExtResource("3_b4lsh")]
+position = Vector2(80, 537)
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=2016338378]
+position = Vector2(-6, 557)
+rotation = 1.5707964
+script = ExtResource("4_yxclo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1023973417]
+shape = SubResource("WorldBoundaryShape2D_pivne")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1840906091]
+position = Vector2(0, 687)
+script = ExtResource("4_yxclo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=512461063]
+shape = SubResource("WorldBoundaryShape2D_pivne")
+
+[node name="Area2D3" type="Area2D" parent="." unique_id=523315468]
+position = Vector2(1162, 551)
+rotation = -1.5707964
+script = ExtResource("4_yxclo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=77799510]
+shape = SubResource("WorldBoundaryShape2D_pivne")
+
+[node name="Area2D4" parent="." unique_id=131126505 instance=ExtResource("5_pklw6")]
+position = Vector2(1054, 519)
+script = ExtResource("6_bp1i4")
+
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_body_entered"]

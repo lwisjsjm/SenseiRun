@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bi770dkd6s5m6" path="res://sensei_chan.gd" id="1_f31jc"]
 [ext_resource type="Texture2D" uid="uid://bopt824gnxjmg" path="res://IDLE.png" id="1_q83vw"]
 [ext_resource type="Texture2D" uid="uid://3ikt7wx8o3tg" path="res://RUN.png" id="2_f31jc"]
+[ext_resource type="AudioStream" uid="uid://bf3ua1fp3t8py" path="res://lumora_studios-pixel-jump-319167.mp3" id="4_1cx5f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1cx5f"]
 atlas = ExtResource("1_q83vw")
@@ -215,3 +216,6 @@ autoplay = "default"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=724727157]
 position = Vector2(0.5, 17)
 shape = SubResource("RectangleShape2D_pivne")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1529287865]
+stream = ExtResource("4_1cx5f")

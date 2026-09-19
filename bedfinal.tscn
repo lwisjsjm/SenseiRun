@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bum666b121r0o"]
+
+[ext_resource type="Texture2D" uid="uid://gofovxrqbp3l" path="res://bed.png" id="1_s816t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81kwy"]
+size = Vector2(98, 66)
+
+[node name="Area2D" type="Area2D" unique_id=131126505]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1762710853]
+texture_filter = 1
+position = Vector2(41, 24.5)
+scale = Vector2(5.1, 5.0833335)
+texture = ExtResource("1_s816t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1268297637]
+position = Vector2(39, 23)
+shape = SubResource("RectangleShape2D_81kwy")
